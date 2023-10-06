@@ -12,3 +12,13 @@ import { createElement, render } from './mini';
  */
 
 //
+const containerId = 'app';
+const container = document.getElementById(containerId);
+
+const hello = createElement('span', null, "Hello ");
+const world = createElement('span', null, "world!");
+const component = createElement('div', {className: 'container'}, [hello, world]);
+
+
+
+render(component, container);

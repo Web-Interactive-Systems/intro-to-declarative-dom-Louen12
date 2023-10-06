@@ -66,9 +66,15 @@ import { createElement, render } from './mini';
 
 */
 
-/** @jsx Todo */
+/** @jsx createElement */
 const component = (
   <div class='container'>
     <span>Hello World!</span>
   </div>
 );
+
+const containerId = 'app';
+const container = document.getElementById(containerId);
+
+render(component, container);
+
